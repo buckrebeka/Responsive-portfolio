@@ -34,7 +34,7 @@ body{
       font-weight: 300;
       color: var(--color-dark);
       line-height: 1.7;
-      
+    
 }
 h1,h2,h3,h4,h5{
     color: var(--color-black);
@@ -78,8 +78,9 @@ img{
     margin: 0  auto;
 }
 section{
-    padding: 6rem 0;
+    padding:-16rem 0;
     margin: 5rem  0;
+   
 }
 .btn{
     background: var(--color-black);
@@ -212,11 +213,12 @@ header{
     right: -30rem;
     bottom: -30rem;
 }
-.header_image{
-    width: 82%;
+.header_image {
+    width: 70%;
     position: absolute;
-    bottom: -1rem;
     z-index: 1;
+    top: 12rem;
+    right: 4rem;
 }
 section#companies{
     position: relative;
@@ -500,6 +502,7 @@ footer{
             transform: rotateX(0deg);
         }
     }
+    
     .nav_menu li a{
         background: var(--color-primary);
         box-shadow: -2rem 2rem rgba(0, 0, 0blue, 0.2);
@@ -509,6 +512,7 @@ footer{
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-top: -0.1rem;
     }
     .nav_menu li a:hover{
         background: var(--color-light);
@@ -608,7 +612,7 @@ footer{
         width: var(--contain-width-sm);
     }
     section{
-        padding: 4rem 0;
+        padding: -16rem 0;
         margin: 4rem 0;
     }
     h1{
@@ -659,6 +663,9 @@ footer{
     .header_image img{
       width: 72%;
     }
+    .header_right{
+        padding: 0;
+    }
     .header_right-bg{
         bottom: 70%;
     }
@@ -674,6 +681,7 @@ footer{
     /* companies */
     .companies_container{
         grid-template-columns: repeat(3,1fr);
+        margin-top: -15rem;
     }
     .companies_container span{
         height: 5.5rem;
@@ -685,7 +693,6 @@ footer{
         grid-template-columns: 1fr
     }
     /* portfolio*/
-
     .portfolio_head{
         flex-direction:column      ;
         gap:1fr;
@@ -696,6 +703,9 @@ footer{
     }
     .portfolio_projects{
         grid-template-columns: 1fr;
+    }
+    .portfolio_cta a{
+        margin: 2rem auto;
     }
     /* testimonials */
     .testimonial{
